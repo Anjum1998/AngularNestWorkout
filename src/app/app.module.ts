@@ -7,6 +7,8 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { RouterModule, Routes } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { FormsModule } from '@angular/forms';
 const myRoute:Routes=[
   {
     path:"",
@@ -15,6 +17,10 @@ const myRoute:Routes=[
   {
     path:"admin",
     component:AdminLoginComponent
+  },
+  {
+    path:"contact",
+    component:ContactUsComponent
   }
 ]
 @NgModule({
@@ -22,12 +28,14 @@ const myRoute:Routes=[
     AppComponent,
     AdminLoginComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
