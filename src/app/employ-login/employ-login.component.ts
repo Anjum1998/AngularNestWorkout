@@ -17,6 +17,7 @@ readValue=()=>
   if (this.empid=="1122"&& this.password=="12345") {
     this.route.navigate(['/course'])
   } else {
+    alert("something went wrong")
     
   }
 }

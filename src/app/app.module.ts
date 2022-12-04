@@ -14,6 +14,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { Navbar2Component } from './navbar2/navbar2.component';
 import { Navbar3Component } from './navbar3/navbar3.component';
 import { EmployLoginComponent } from './employ-login/employ-login.component';
+import { AddCourseComponent } from './add-course/add-course.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -38,6 +39,10 @@ const myRoute:Routes=[
   {
     path:"emp",
     component:EmployLoginComponent
+  },
+  {
+    path:"course",
+    component:AddCourseComponent
   }
 ]
 @NgModule({
@@ -51,7 +56,8 @@ const myRoute:Routes=[
     GalleryComponent,
     Navbar2Component,
     Navbar3Component,
-    EmployLoginComponent
+    EmployLoginComponent,
+    AddCourseComponent
   ],
   imports: [
     BrowserModule,
