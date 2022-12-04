@@ -15,6 +15,7 @@ import { Navbar2Component } from './navbar2/navbar2.component';
 import { Navbar3Component } from './navbar3/navbar3.component';
 import { EmployLoginComponent } from './employ-login/employ-login.component';
 import { AddCourseComponent } from './add-course/add-course.component';
+import { ViewCourseComponent } from './view-course/view-course.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -43,6 +44,10 @@ const myRoute:Routes=[
   {
     path:"course",
     component:AddCourseComponent
+  },
+  {
+    path:"view",
+    component:ViewCourseComponent
   }
 ]
 @NgModule({
@@ -57,7 +62,8 @@ const myRoute:Routes=[
     Navbar2Component,
     Navbar3Component,
     EmployLoginComponent,
-    AddCourseComponent
+    AddCourseComponent,
+    ViewCourseComponent
   ],
   imports: [
     BrowserModule,
