@@ -1,0 +1,90 @@
+
+<app-navbar></app-navbar>
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg--12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                    <div class="card">
+                        <img height="250px" src="https://c0.wallpaperflare.com/preview/510/711/624/flatlay-contact-us-local-communication.jpg" class="card-img-top" alt="...">
+                        
+                      </div>
+        
+                </div>
+                
+                
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+                    <div class="row g-3">
+                        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                            <h3>Write to Us</h3>
+
+                        </div>
+                        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+                            <label for="" class="form-label">Name</label>
+                            <input name="name"[(ngModel)]="name" type="text" class="form-control">
+
+                        </div>
+                        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+                            <label for="" class="form-label">Designation</label>
+                            <input name="designation" [(ngModel)]="designation" type="text" class="form-control">
+
+                        </div>
+                        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+                            <label for="" class="form-label">Email</label>
+                            <input type="email" name="email" [(ngModel)]="email" id="" class="form-control">
+
+                        </div>
+                        
+                        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+                            <label for="" class="form-label">Phone</label>
+                            <input name="phone" [(ngModel)]="phone" type="text" class="form-control">
+
+                        </div>
+                        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                            <label for="" class="form-label">Subject</label>
+                            <textarea name="subject" [(ngModel)]="subject" id="" cols="30" rows="3" class="form-control"></textarea>
+
+                        </div>
+                        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                            <button (click)="readValue()" class="btn btn-primary">Submit</button>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+                    <h3>Contact us</h3>
+                    
+                    <h6>NeST DIGITAL CORPORATE OFFICE</h6>
+                        <p>Plot No. 2, Cochin Special Economic Zone
+                        (CSEZ), Kakkanad, Cochin ,682 037, India,
+                        Phone: +91-484-661 4300</p>
+
+                    <h6>FOR BUSINESS RELATED ENQUIRIES</h6>
+                    <p>
+                        Email: sales.nestdigital@nestgroup.net
+                        
+                        Ph: +91-484-6701000, +91484-4203333</p>
+                    
+
+                </div>
+                
+
+               
+               
+            </div>
+        </div>
+    </div>
+</div>
