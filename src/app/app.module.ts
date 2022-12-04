@@ -13,6 +13,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { Navbar2Component } from './navbar2/navbar2.component';
 import { Navbar3Component } from './navbar3/navbar3.component';
+import { EmployLoginComponent } from './employ-login/employ-login.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -33,6 +34,10 @@ const myRoute:Routes=[
   {
     path:"gal",
     component:GalleryComponent
+  },
+  {
+    path:"emp",
+    component:EmployLoginComponent
   }
 ]
 @NgModule({
@@ -45,7 +50,8 @@ const myRoute:Routes=[
     AboutUsComponent,
     GalleryComponent,
     Navbar2Component,
-    Navbar3Component
+    Navbar3Component,
+    EmployLoginComponent
   ],
   imports: [
     BrowserModule,

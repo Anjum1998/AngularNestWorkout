@@ -1,0 +1,50 @@
+
+<app-navbar></app-navbar>
+<style>
+    .bgm{background-image:url('https://img.freepik.com/free-vector/colorful-welcome-composition-with-origami-style_23-2147919827.jpg?w=2000') ;}
+</style>
+<div class="bgm" style="height:700px">
+<div class="container">
+    
+
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+            <div class="row g-3">
+
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                    <h2 class="text" style="text-align:center">Employ Login</h2>
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                    <label for="" class="form-label">Employ ID</label>
+                    <input name="empid" [(ngModel)]="empid"  type="text" class="form-control">
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                    <label for="" class="form-label ">Password</label>
+                    <input  name="password" [(ngModel)]="password"   type="password" name="" id="" class="form-control">
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                   <button (click)="readValue()"  class="btn btn-primary">Login</button>
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                    <a routerLink="/register" >Emp Register</a>
+                   
+
+                </div>
+                
+                
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
