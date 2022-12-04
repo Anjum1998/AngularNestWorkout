@@ -6,9 +6,14 @@ import { AppComponent } from './app.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { RouterModule, Routes } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
+import { HomeComponent } from './home/home.component';
 const myRoute:Routes=[
   {
     path:"",
+    component:HomeComponent
+  },
+  {
+    path:"admin",
     component:AdminLoginComponent
   }
 ]
@@ -16,7 +21,8 @@ const myRoute:Routes=[
   declarations: [
     AppComponent,
     AdminLoginComponent,
-    NavbarComponent
+    NavbarComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
