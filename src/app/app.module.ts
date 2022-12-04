@@ -11,6 +11,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FormsModule } from '@angular/forms';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { Navbar2Component } from './navbar2/navbar2.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -41,7 +42,8 @@ const myRoute:Routes=[
     HomeComponent,
     ContactUsComponent,
     AboutUsComponent,
-    GalleryComponent
+    GalleryComponent,
+    Navbar2Component
   ],
   imports: [
     BrowserModule,
