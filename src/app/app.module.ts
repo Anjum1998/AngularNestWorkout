@@ -9,6 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FormsModule } from '@angular/forms';
+import { AboutUsComponent } from './about-us/about-us.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -21,6 +22,10 @@ const myRoute:Routes=[
   {
     path:"contact",
     component:ContactUsComponent
+  },
+  {
+    path:"about",
+    component:AboutUsComponent
   }
 ]
 @NgModule({
@@ -29,7 +34,8 @@ const myRoute:Routes=[
     AdminLoginComponent,
     NavbarComponent,
     HomeComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
